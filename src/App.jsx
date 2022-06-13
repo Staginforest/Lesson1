@@ -1,5 +1,5 @@
 import { Form } from './components/classes/Form';
-import { Form as FormFunc } from './components/stories/Form';
+import { Form as FormFunc } from './components/func/Form';
 import { useState } from 'react';
 
 export const App = () => {
