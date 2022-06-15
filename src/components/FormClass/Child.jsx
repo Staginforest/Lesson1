@@ -12,12 +12,6 @@ export class Child extends Component {
 
   componentDidMount() {
     console.log('Child did mount');
-    // this.interval = setInterval(() => {
-    //   console.log(1);
-    // }, 1000);
-    // this.myRef.current.addEventListener('click', () => {
-    //   console.log('click');
-    // });
   }
 
   componentDidUpdate() {
@@ -26,18 +20,7 @@ export class Child extends Component {
 
   componentWillUnmount() {
     console.log('Child will unmount');
-    // clearInterval(this.interval);
   }
-
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   if (nextState.count % 2 === 0) {
-  //     return true;
-  //   }
-
-  //   if (nextProps.name === this.props.name) {
-  //     return false;
-  //   }
-  // }
 
   static getDerivedStateFromProps(nextProps) {
     if (nextProps.count < 5) {
